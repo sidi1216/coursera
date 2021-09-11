@@ -65,8 +65,13 @@ void print_statistics(char ptr[], int count) {
 	}
 
 	printf(" Start to analyze the input array \n"); 
-
+	printf(" Input array \n"); 
 	print_array(ptrInt, count); 
+
+	printf("\n The sorted array \n");
+	sort_array(ptrInt, count); 
+	print_array(ptrInt, count);
+	
 	 
 	min = find_minimum(ptrInt, count); 
 	max = find_maximum(ptrInt, count);
@@ -85,7 +90,7 @@ void print_statistics(char ptr[], int count) {
 
 void print_array(int ptr[], int count) {
 	int i; 
-	printf(" The input array is \n   ["); 
+	printf("["); 
 	for ( i = 0; i < count; i++) {
 	  printf("%d ", ptr[i]);  
 	}
