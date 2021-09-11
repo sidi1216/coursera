@@ -55,7 +55,8 @@ void main() {
 
 /* Add other Implementation File Code Here */
 void print_statistics(char ptr[], int count) {
-	int i,  min, max, mean, median; 
+	int i,  min, max, median;
+        float mean; 	
 	unsigned int ptrInt[count]; 
 
 	// copy  unsigned char arrays to unsigned int arrays :
@@ -74,7 +75,7 @@ void print_statistics(char ptr[], int count) {
 	
 	printf("\n Analyzing the input array.....\n");
 	printf(" The statistics information: \n");  
-	printf("	Mean:    %d", mean);
+	printf("	Mean:    %f", mean);
 	printf("\n	Median:  %d", median); 
 	printf("\n	Minimum: %d", min); 
 	printf("\n	Maximum: %d", max); 
@@ -127,7 +128,7 @@ int find_median(int ptr[], int count) {
 }
 
 float find_mean(int ptr[], int count) {
-	int average; 
+	int average = 0; 
 	int i; 
 
 
@@ -139,7 +140,7 @@ float find_mean(int ptr[], int count) {
 		average += ptr[i];
 	}
 
-	return (average / count); 
+	return (float) average / count; 
 }
 
 int find_maximum(int ptr[], int count) {
