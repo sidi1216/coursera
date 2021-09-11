@@ -9,14 +9,24 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * Project name: statistic analysis of the given dataset 
+ * 
+ * Description:  A simple c programming function to analyze an array of unsigned
+ * 		 char data items and report analytics 
+ * 		to display on a set of number:
+ * 		1. Maximum 
+ * 		2. Minimum 
+ * 		3. Mean
+ * 		4. Median 
+ *		The data set will be reordered from the large to small and print 
+ *		the those set of numbers on the screen 
+ *
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
- *
+ * @author: Sidi Huang
+ * @date: 2021-09-09 
+ *******************************************************************************
  */
 
 
@@ -39,5 +49,11 @@ void main() {
   /* Statistics and Printing Functions Go Here */
 
 }
-
+void print_statistics(char ptr[], int count) {}
+void print_array(int ptr[], int count) {}
+void sort_array(int ptr[], int count) {}
+int find_median(int ptr[], int count) {}
+float find_mean(int ptr[], int count) {}
+int find_maximum(int ptr[], int count) {}
+int find_minimum(int ptr[], int count) {}
 /* Add other Implementation File Code Here */
